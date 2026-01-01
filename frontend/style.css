@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: linear-gradient(120deg, rgb(199,151,80), rgb(85,56,3));
+  font-family: sans-serif;
+}
+
+#controls {
+  padding: 5vh ; /* small top and bottom padding */
+}
+
+input {
+  width: 350px;
+  padding: 12px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  background:
+    linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(135deg, #dcdc06ca, #ca880e) border-box;
+}
+
+#prompt {
+  border-radius: 5px;
+  padding: 15px;
+  width: 35%;
+}
+
+#generate {
+  border-radius: 5px;
+  padding: 15px;
+  width: 25%;
+  margin-top: 1vh;
+}
+
+::placeholder {
+  text-align: center;
+  font-size: larger;
+}
+
+/* Image container */
+.img-section {
+  
+  justify-content: center;
+  padding-top: 3vh; /* small gap between controls and image */
+  margin-bottom: 5vh; /* small gap at bottom */
+  flex-direction: column;
+}
+
+/* Generated image */
+img {
+  width: 400px;      /* fixed width */
+  height: 600px;     /* fixed height */
+  object-fit: cover;
+  border-radius: 16px;
+}
